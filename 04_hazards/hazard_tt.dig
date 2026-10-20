@@ -1,7 +1,7 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <circuit>
-  <version>1</version>
-  <attributes />
+  <version>2</version>
+  <attributes/>
   <visualElements>
     <visualElement>
       <elementName>In</elementName>
@@ -10,8 +10,12 @@
           <string>Label</string>
           <string>x1</string>
         </entry>
+        <entry>
+          <string>InDefault</string>
+          <value v="1" z="false"/>
+        </entry>
       </elementAttributes>
-      <pos x="180" y="140" />
+      <pos x="180" y="140"/>
     </visualElement>
     <visualElement>
       <elementName>In</elementName>
@@ -20,8 +24,12 @@
           <string>Label</string>
           <string>x2</string>
         </entry>
+        <entry>
+          <string>InDefault</string>
+          <value v="1" z="false"/>
+        </entry>
       </elementAttributes>
-      <pos x="240" y="140" />
+      <pos x="240" y="140"/>
     </visualElement>
     <visualElement>
       <elementName>In</elementName>
@@ -30,8 +38,12 @@
           <string>Label</string>
           <string>x3</string>
         </entry>
+        <entry>
+          <string>InDefault</string>
+          <value v="1" z="false"/>
+        </entry>
       </elementAttributes>
-      <pos x="300" y="140" />
+      <pos x="300" y="140"/>
     </visualElement>
     <visualElement>
       <elementName>In</elementName>
@@ -41,17 +53,17 @@
           <string>x4</string>
         </entry>
       </elementAttributes>
-      <pos x="360" y="140" />
+      <pos x="360" y="140"/>
     </visualElement>
     <visualElement>
       <elementName>And</elementName>
-      <elementAttributes />
-      <pos x="440" y="200" />
+      <elementAttributes/>
+      <pos x="440" y="200"/>
     </visualElement>
     <visualElement>
       <elementName>Not</elementName>
-      <elementAttributes />
-      <pos x="380" y="240" />
+      <elementAttributes/>
+      <pos x="380" y="240"/>
     </visualElement>
     <visualElement>
       <elementName>And</elementName>
@@ -61,7 +73,7 @@
           <int>3</int>
         </entry>
       </elementAttributes>
-      <pos x="440" y="320" />
+      <pos x="440" y="320"/>
     </visualElement>
     <visualElement>
       <elementName>Not</elementName>
@@ -71,12 +83,12 @@
           <int>10</int>
         </entry>
       </elementAttributes>
-      <pos x="380" y="360" />
+      <pos x="380" y="360"/>
     </visualElement>
     <visualElement>
       <elementName>Or</elementName>
-      <elementAttributes />
-      <pos x="560" y="260" />
+      <elementAttributes/>
+      <pos x="560" y="260"/>
     </visualElement>
     <visualElement>
       <elementName>Out</elementName>
@@ -86,85 +98,104 @@
           <string>y</string>
         </entry>
       </elementAttributes>
-      <pos x="660" y="280" />
+      <pos x="660" y="280"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Data</elementName>
+      <elementAttributes>
+        <entry>
+          <string>microStep</string>
+          <boolean>true</boolean>
+        </entry>
+        <entry>
+          <string>maxStepCount</string>
+          <int>25</int>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>Data</string>
+        </entry>
+      </elementAttributes>
+      <pos x="180" y="420"/>
     </visualElement>
   </visualElements>
   <wires>
     <wire>
-      <p1 x="180" y="140" />
-      <p2 x="180" y="320" />
+      <p1 x="180" y="140"/>
+      <p2 x="180" y="320"/>
     </wire>
     <wire>
-      <p1 x="180" y="320" />
-      <p2 x="440" y="320" />
+      <p1 x="180" y="320"/>
+      <p2 x="440" y="320"/>
     </wire>
     <wire>
-      <p1 x="240" y="140" />
-      <p2 x="240" y="340" />
+      <p1 x="240" y="140"/>
+      <p2 x="240" y="340"/>
     </wire>
     <wire>
-      <p1 x="240" y="340" />
-      <p2 x="440" y="340" />
+      <p1 x="240" y="340"/>
+      <p2 x="440" y="340"/>
     </wire>
     <wire>
-      <p1 x="300" y="140" />
-      <p2 x="300" y="200" />
+      <p1 x="300" y="140"/>
+      <p2 x="300" y="200"/>
     </wire>
     <wire>
-      <p1 x="300" y="200" />
-      <p2 x="440" y="200" />
+      <p1 x="300" y="200"/>
+      <p2 x="440" y="200"/>
     </wire>
     <wire>
-      <p1 x="300" y="200" />
-      <p2 x="300" y="360" />
+      <p1 x="300" y="200"/>
+      <p2 x="300" y="360"/>
     </wire>
     <wire>
-      <p1 x="300" y="360" />
-      <p2 x="380" y="360" />
+      <p1 x="300" y="360"/>
+      <p2 x="380" y="360"/>
     </wire>
     <wire>
-      <p1 x="420" y="360" />
-      <p2 x="440" y="360" />
+      <p1 x="420" y="360"/>
+      <p2 x="440" y="360"/>
     </wire>
     <wire>
-      <p1 x="360" y="140" />
-      <p2 x="360" y="240" />
+      <p1 x="360" y="140"/>
+      <p2 x="360" y="240"/>
     </wire>
     <wire>
-      <p1 x="360" y="240" />
-      <p2 x="380" y="240" />
+      <p1 x="360" y="240"/>
+      <p2 x="380" y="240"/>
     </wire>
     <wire>
-      <p1 x="420" y="240" />
-      <p2 x="440" y="240" />
+      <p1 x="420" y="240"/>
+      <p2 x="440" y="240"/>
     </wire>
     <wire>
-      <p1 x="500" y="220" />
-      <p2 x="530" y="220" />
+      <p1 x="500" y="220"/>
+      <p2 x="530" y="220"/>
     </wire>
     <wire>
-      <p1 x="530" y="220" />
-      <p2 x="530" y="260" />
+      <p1 x="530" y="220"/>
+      <p2 x="530" y="260"/>
     </wire>
     <wire>
-      <p1 x="530" y="260" />
-      <p2 x="560" y="260" />
+      <p1 x="530" y="260"/>
+      <p2 x="560" y="260"/>
     </wire>
     <wire>
-      <p1 x="500" y="340" />
-      <p2 x="530" y="340" />
+      <p1 x="500" y="340"/>
+      <p2 x="530" y="340"/>
     </wire>
     <wire>
-      <p1 x="530" y="340" />
-      <p2 x="530" y="300" />
+      <p1 x="530" y="340"/>
+      <p2 x="530" y="300"/>
     </wire>
     <wire>
-      <p1 x="530" y="300" />
-      <p2 x="560" y="300" />
+      <p1 x="530" y="300"/>
+      <p2 x="560" y="300"/>
     </wire>
     <wire>
-      <p1 x="620" y="280" />
-      <p2 x="660" y="280" />
+      <p1 x="620" y="280"/>
+      <p2 x="660" y="280"/>
     </wire>
   </wires>
+  <measurementOrdering/>
 </circuit>
