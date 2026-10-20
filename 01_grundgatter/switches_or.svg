@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Digital by H.Neemann -->
+<!-- created: Tue Oct 13 09:20:27 CEST 2026 -->
+
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   width="181.65mm"
+   height="20.25mm"
+   viewBox="202 143 1211 135">
+<g stroke-linecap="square">
+<path d="M 340,240 L 420,240 L 420,200 L 500,200" stroke="#808080" stroke-width="4.0" fill="none"/>
+<g>
+</g>
+<g>
+<text text-anchor="start" x="204.0" y="222.0" fill="#808080" style="font-size:24px">Es fehlt ein Diagramm für Const.</text>
+<text text-anchor="start" x="204.0" y="246.0" fill="#808080" style="font-size:24px">Konnte kein Element vom Typ &quot;Const&quot; erzeugen!</text>
+<text text-anchor="start" x="204.0" y="270.0" fill="#808080" style="font-size:24px">class java.lang.String cannot be cast to class java.lang.Long (java.lang.String and java.lang.Long a...</text>
+</g>
+<g>
+<circle cx="516.0" cy="200.0" r="9.0" stroke="#808080" stroke-width="4.0" fill="none" />
+<circle cx="516.0" cy="200.0" r="15.0" stroke="#808080" stroke-width="4.0" fill="none" />
+<text text-anchor="start" x="545.0" y="209.0" fill="#808080" style="font-size:24px"><tspan style="font-style:italic;">l</tspan></text>
+</g>
+<g>
+<path d="M 309,145 L 339,145 L 339,175 L 309,175 Z" stroke="#808080" stroke-width="4.0" fill="none"/>
+<circle cx="324.0" cy="160.0" r="9.0" stroke="#808080" stroke-width="4.0" fill="none" />
+<text text-anchor="end" x="295.0" y="169.0" fill="#808080" style="font-size:24px"><tspan style="font-style:italic;">s1</tspan></text>
+</g>
+<g>
+<path d="M 309,225 L 339,225 L 339,255 L 309,255 Z" stroke="#808080" stroke-width="4.0" fill="none"/>
+<circle cx="324.0" cy="240.0" r="9.0" stroke="#808080" stroke-width="4.0" fill="none" />
+<text text-anchor="end" x="295.0" y="249.0" fill="#808080" style="font-size:24px"><tspan style="font-style:italic;">s2</tspan></text>
+</g>
+</g>
+</svg>

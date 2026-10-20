@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Digital by H.Neemann -->
+<!-- created: Tue Oct 13 09:19:41 CEST 2026 -->
+
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   width="43.95mm"
+   height="5.1mm"
+   viewBox="141 143 293 34">
+    <defs>
+    <style>
+      .wire { stroke: #0284c7; stroke-width: 3.5; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+      .gate { stroke: #334155; stroke-width: 3.5; fill: #ffffff; }
+      .gate-sym { font-family: system-ui, -apple-system, sans-serif; font-size: 22px; font-weight: bold; fill: #1e293b; }
+      .label { font-family: system-ui, -apple-system, sans-serif; font-size: 20px; font-weight: bold; fill: #1e293b; }
+      .sublabel { font-family: system-ui, -apple-system, sans-serif; font-size: 16px; font-weight: 600; fill: #0284c7; }
+      .dot { fill: #0284c7; stroke: none; }
+      .pin-box { stroke: #64748b; stroke-width: 2.5; fill: #ffffff; }
+      .pin-dot { stroke: #0284c7; stroke-width: 3.0; fill: #ffffff; }
+      .out-lamp { stroke: #dc2626; stroke-width: 3.5; fill: #ffffff; }
+      .out-lamp-outer { stroke: #ef4444; stroke-width: 2.5; fill: none; }
+      .neg-bubble { stroke: #334155; stroke-width: 3.0; fill: #ffffff; }
+      .delay-box { stroke: #334155; stroke-width: 3.0; fill: #f8fafc; }
+      .delay-text { font-family: system-ui, -apple-system, sans-serif; font-size: 18px; font-weight: bold; fill: #334155; }
+    </style>
+  </defs>
+
+
+<g stroke-linecap="square">
+<path d="M 200,160 L 300,160" class="wire"/>
+<path d="M 340,160 L 380,160" class="wire"/>
+<g>
+</g>
+<g>
+<path d="M 301,150 L 319,150 L 319,170 L 301,170 Z" class="gate"/>
+<circle cx="330.0" cy="160.0" r="9.0" class="pin-dot"/>
+</g>
+<g>
+<circle cx="396.0" cy="160.0" r="9.0" class="pin-dot"/>
+<circle cx="396.0" cy="160.0" r="15.0" class="out-lamp-outer"/>
+<text text-anchor="start" x="425.0" y="169.0" class="label">l</text>
+</g>
+<g>
+<path d="M 169,145 L 199,145 L 199,175 L 169,175 Z" class="pin-box"/>
+<circle cx="184.0" cy="160.0" r="9.0" class="pin-dot"/>
+<text text-anchor="end" x="155.0" y="169.0" class="label">s</text>
+</g>
+</g>
+</svg>

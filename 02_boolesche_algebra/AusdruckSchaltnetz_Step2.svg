@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Digital by H.Neemann -->
+<!-- created: Tue Oct 13 09:36:40 CEST 2026 -->
+
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   width="30.3mm"
+   height="9.6mm"
+   viewBox="538 288 202 64">
+<g stroke-linecap="square">
+<path d="M 540,300 L 580,300" stroke="#808080" stroke-width="4.0" fill="none"/>
+<path d="M 540,340 L 580,340" stroke="#808080" stroke-width="4.0" fill="none"/>
+<path d="M 640,320 L 680,320" stroke="#808080" stroke-width="4.0" fill="none"/>
+<g>
+</g>
+<g>
+<path d="M 581,290 L 639,290 L 639,350 L 581,350 Z" stroke="#808080" stroke-width="4.0" fill="none"/>
+<text text-anchor="middle" x="610.0" y="312.0" fill="#808080" style="font-size:24px">≥1</text>
+<circle cx="580.0" cy="300.0" r="2.0" stroke="#808080" stroke-width="4.0" fill="#808080" />
+<circle cx="580.0" cy="340.0" r="2.0" stroke="#808080" stroke-width="4.0" fill="#808080" />
+<circle cx="640.0" cy="320.0" r="2.0" stroke="#808080" stroke-width="4.0" fill="#808080" />
+</g>
+<g>
+<circle cx="696.0" cy="320.0" r="9.0" stroke="#808080" stroke-width="4.0" fill="none" />
+<circle cx="696.0" cy="320.0" r="15.0" stroke="#808080" stroke-width="4.0" fill="none" />
+<text text-anchor="start" x="725.0" y="329.0" fill="#808080" style="font-size:24px"><tspan style="font-style:italic;">y</tspan></text>
+<circle cx="680.0" cy="320.0" r="2.0" stroke="#808080" stroke-width="4.0" fill="#808080" />
+</g>
+</g>
+</svg>

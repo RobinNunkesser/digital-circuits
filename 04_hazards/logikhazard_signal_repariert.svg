@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Digital by H.Neemann -->
+<!-- created: Tue Oct 13 09:20:21 CEST 2026 -->
+
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   width="77.7mm"
+   height="46.35mm"
+   viewBox="283 143 518 309">
+<g stroke-linecap="square">
+<path d="M 360,160 L 480,160 L 480,400 L 580,400" stroke="#808080" stroke-width="4.0" fill="none"/>
+<path d="M 480,160 L 480,240 L 580,240" stroke="#808080" stroke-width="4.0" fill="none"/>
+<path d="M 360,240 L 480,240 L 480,420 L 580,420" stroke="#808080" stroke-width="4.0" fill="none"/>
+<path d="M 480,240 L 480,260 L 580,260" stroke="#808080" stroke-width="4.0" fill="none"/>
+<path d="M 360,380 L 480,380" stroke="#808080" stroke-width="4.0" fill="none"/>
+<path d="M 520,280 L 580,280" stroke="#808080" stroke-width="4.0" fill="none"/>
+<path d="M 520,380 L 560,380 L 560,360 L 580,360" stroke="#808080" stroke-width="4.0" fill="none"/>
+<path d="M 560,380 L 560,440 L 580,440" stroke="#808080" stroke-width="4.0" fill="none"/>
+<path d="M 640,420 L 680,420 L 680,320 L 740,320" stroke="#808080" stroke-width="4.0" fill="none"/>
+<path d="M 640,340 L 680,340 L 680,280 L 740,280" stroke="#808080" stroke-width="4.0" fill="none"/>
+<g>
+<circle cx="480.0" cy="160.0" r="4.0" stroke="#808080" stroke-width="4.0" fill="#808080" />
+<circle cx="480.0" cy="240.0" r="4.0" stroke="#808080" stroke-width="4.0" fill="#808080" />
+<circle cx="560.0" cy="380.0" r="4.0" stroke="#808080" stroke-width="4.0" fill="#808080" />
+</g>
+<g>
+<path d="M 581,390 L 639,390 L 639,450 L 581,450 Z" stroke="#808080" stroke-width="4.0" fill="none"/>
+<text text-anchor="middle" x="610.0" y="412.0" fill="#808080" style="font-size:24px">&amp;</text>
+</g>
+<g>
+<path d="M 481,270 L 499,270 L 499,290 L 481,290 Z" stroke="#808080" stroke-width="4.0" fill="none"/>
+<circle cx="510.0" cy="280.0" r="9.0" stroke="#808080" stroke-width="4.0" fill="none" />
+</g>
+<g>
+<path d="M 481,370 L 499,370 L 499,390 L 481,390 Z" stroke="#808080" stroke-width="4.0" fill="none"/>
+<circle cx="510.0" cy="380.0" r="9.0" stroke="#808080" stroke-width="4.0" fill="none" />
+</g>
+<g>
+<path d="M 581,310 L 639,310 L 639,370 L 581,370 Z" stroke="#808080" stroke-width="4.0" fill="none"/>
+<text text-anchor="middle" x="610.0" y="332.0" fill="#808080" style="font-size:24px">&amp;</text>
+</g>
+<g>
+<path d="M 741,270 L 799,270 L 799,330 L 741,330 Z" stroke="#808080" stroke-width="4.0" fill="none"/>
+<text text-anchor="middle" x="770.0" y="292.0" fill="#808080" style="font-size:24px">≥1</text>
+</g>
+<g>
+<path d="M 581,230 L 639,230 L 639,290 L 581,290 Z" stroke="#808080" stroke-width="4.0" fill="none"/>
+<text text-anchor="middle" x="610.0" y="252.0" fill="#808080" style="font-size:24px">&amp;</text>
+</g>
+<g>
+<circle cx="616.0" cy="180.0" r="9.0" stroke="#808080" stroke-width="4.0" fill="none" />
+<circle cx="616.0" cy="180.0" r="15.0" stroke="#808080" stroke-width="4.0" fill="none" />
+<text text-anchor="start" x="645.0" y="189.0" fill="#808080" style="font-size:24px"><tspan style="font-style:italic;">x3</tspan></text>
+</g>
+<g>
+<path d="M 329,145 L 359,145 L 359,175 L 329,175 Z" stroke="#808080" stroke-width="4.0" fill="none"/>
+<circle cx="344.0" cy="160.0" r="9.0" stroke="#808080" stroke-width="4.0" fill="none" />
+<text text-anchor="end" x="315.0" y="169.0" fill="#808080" style="font-size:24px"><tspan style="font-style:italic;">x1</tspan></text>
+</g>
+<g>
+<path d="M 329,225 L 359,225 L 359,255 L 329,255 Z" stroke="#808080" stroke-width="4.0" fill="none"/>
+<circle cx="344.0" cy="240.0" r="9.0" stroke="#808080" stroke-width="4.0" fill="none" />
+<text text-anchor="end" x="315.0" y="249.0" fill="#808080" style="font-size:24px"><tspan style="font-style:italic;">x2</tspan></text>
+</g>
+<g>
+<path d="M 329,365 L 359,365 L 359,395 L 329,395 Z" stroke="#808080" stroke-width="4.0" fill="none"/>
+<circle cx="344.0" cy="380.0" r="9.0" stroke="#808080" stroke-width="4.0" fill="none" />
+<text text-anchor="end" x="315.0" y="389.0" fill="#808080" style="font-size:24px"><tspan style="font-style:italic;">x4</tspan></text>
+</g>
+</g>
+</svg>

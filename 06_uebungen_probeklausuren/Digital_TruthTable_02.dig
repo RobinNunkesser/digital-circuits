@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<circuit>
+  <version>1</version>
+  <attributes/>
+  <visualElements>
+    <!-- Inputs -->
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry><string>Label</string><string>e_1</string></entry>
+      </elementAttributes>
+      <pos x="100" y="140"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry><string>Label</string><string>e_2</string></entry>
+      </elementAttributes>
+      <pos x="100" y="220"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry><string>Label</string><string>e_3</string></entry>
+      </elementAttributes>
+      <pos x="100" y="320"/>
+    </visualElement>
+
+    <!-- OR1: e1 OR e2 -->
+    <visualElement>
+      <elementName>Or</elementName>
+      <elementAttributes/>
+      <pos x="220" y="140"/>
+    </visualElement>
+
+    <!-- AND1: e1 AND e2 -->
+    <visualElement>
+      <elementName>And</elementName>
+      <elementAttributes/>
+      <pos x="220" y="240"/>
+    </visualElement>
+
+    <!-- AND2: (e1 OR e2) AND e3 -> a1 -->
+    <visualElement>
+      <elementName>And</elementName>
+      <elementAttributes/>
+      <pos x="340" y="140"/>
+    </visualElement>
+
+    <!-- XOR1: (e1 OR e2) XOR e3 -->
+    <visualElement>
+      <elementName>XOr</elementName>
+      <elementAttributes/>
+      <pos x="340" y="340"/>
+    </visualElement>
+
+    <!-- XOR2: (e1 AND e2) XOR ((e1 OR e2) XOR e3) -> a2 -->
+    <visualElement>
+      <elementName>XOr</elementName>
+      <elementAttributes/>
+      <pos x="440" y="260"/>
+    </visualElement>
+
+    <!-- Outputs -->
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry><string>Label</string><string>a_1</string></entry>
+      </elementAttributes>
+      <pos x="540" y="160"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry><string>Label</string><string>a_2</string></entry>
+      </elementAttributes>
+      <pos x="540" y="280"/>
+    </visualElement>
+
+    <!-- Testcase -->
+    <visualElement>
+      <elementName>Testcase</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Testdata</string>
+          <testData>
+            <dataString>e_1 e_2 e_3 a_1 a_2
+ 0   0   0   0   0
+ 0   0   1   0   1
+ 0   1   0   0   1
+ 0   1   1   1   0
+ 1   0   0   0   1
+ 1   0   1   1   0
+ 1   1   0   0   0
+ 1   1   1   1   1
+</dataString>
+          </testData>
+        </entry>
+      </elementAttributes>
+      <pos x="100" y="80"/>
+    </visualElement>
+  </visualElements>
+  <wires>
+    <!-- e1 branches -->
+    <wire><p1 x="100" y="140"/><p2 x="140" y="140"/></wire>
+    <wire><p1 x="140" y="140"/><p2 x="220" y="140"/></wire>
+    <wire><p1 x="140" y="140"/><p2 x="140" y="240"/></wire>
+    <wire><p1 x="140" y="240"/><p2 x="220" y="240"/></wire>
+
+    <!-- e2 branches -->
+    <wire><p1 x="100" y="220"/><p2 x="160" y="220"/></wire>
+    <wire><p1 x="160" y="180"/><p2 x="160" y="220"/></wire>
+    <wire><p1 x="160" y="180"/><p2 x="220" y="180"/></wire>
+    <wire><p1 x="160" y="220"/><p2 x="160" y="280"/></wire>
+    <wire><p1 x="160" y="280"/><p2 x="220" y="280"/></wire>
+
+    <!-- e3 branches -->
+    <wire><p1 x="100" y="320"/><p2 x="180" y="320"/></wire>
+    <wire><p1 x="180" y="180"/><p2 x="180" y="320"/></wire>
+    <wire><p1 x="180" y="180"/><p2 x="340" y="180"/></wire>
+    <wire><p1 x="180" y="320"/><p2 x="180" y="380"/></wire>
+    <wire><p1 x="180" y="380"/><p2 x="340" y="380"/></wire>
+
+    <!-- OR1 out to AND2 and XOR1 -->
+    <wire><p1 x="280" y="160"/><p2 x="300" y="160"/></wire>
+    <wire><p1 x="300" y="140"/><p2 x="300" y="160"/></wire>
+    <wire><p1 x="300" y="140"/><p2 x="340" y="140"/></wire>
+    <wire><p1 x="300" y="160"/><p2 x="300" y="340"/></wire>
+    <wire><p1 x="300" y="340"/><p2 x="340" y="340"/></wire>
+
+    <!-- AND1 out to XOR2 -->
+    <wire><p1 x="280" y="260"/><p2 x="440" y="260"/></wire>
+
+    <!-- AND2 out to a1 -->
+    <wire><p1 x="400" y="160"/><p2 x="540" y="160"/></wire>
+
+    <!-- XOR1 out to XOR2 -->
+    <wire><p1 x="400" y="360"/><p2 x="420" y="360"/></wire>
+    <wire><p1 x="420" y="300"/><p2 x="420" y="360"/></wire>
+    <wire><p1 x="420" y="300"/><p2 x="440" y="300"/></wire>
+
+    <!-- XOR2 out to a2 -->
+    <wire><p1 x="500" y="280"/><p2 x="540" y="280"/></wire>
+  </wires>
+</circuit>

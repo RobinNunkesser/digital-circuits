@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 220" width="100%" height="220px">
+  <defs>
+    <style>
+      .wire { stroke: #0f172a; stroke-width: 3; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+      .component { stroke: #0f172a; stroke-width: 3; fill: #ffffff; }
+      .lbl { font-family: system-ui, -apple-system, sans-serif; font-size: 16px; font-weight: bold; fill: #0f172a; text-anchor: middle; }
+      .lbl-sub { font-family: system-ui, -apple-system, sans-serif; font-size: 13px; font-weight: bold; fill: #0f172a; text-anchor: middle; }
+    </style>
+  </defs>
+<path d="M 50,88 L 50,30 L 100,30 L 100,50 L 130,50" class="wire"/>
+<path d="M 100,30 L 100,90 L 130,90" class="wire"/>
+  <!-- Switch s₁ -->
+  <circle cx="130" cy="50" r="4" class="component"/>
+  <circle cx="190" cy="50" r="4" class="component"/>
+  <line x1="132" y1="48" x2="178.0" y2="32" class="wire"/>
+  <text x="160.0" y="74" class="lbl" style="font-size: 18px; font-style: italic;">s₁</text>
+  <!-- Switch s₂ -->
+  <circle cx="130" cy="90" r="4" class="component"/>
+  <circle cx="190" cy="90" r="4" class="component"/>
+  <line x1="132" y1="88" x2="178.0" y2="72" class="wire"/>
+  <text x="160.0" y="114" class="lbl" style="font-size: 18px; font-style: italic;">s₂</text>
+<path d="M 190,50 L 220,50 L 220,30 L 300,30 L 300,90" class="wire"/>
+<path d="M 190,90 L 220,90 L 220,30" class="wire"/>
+  <!-- Lamp -->
+  <circle cx="300" cy="110" r="20" class="component"/>
+  <line x1="286" y1="96" x2="314" y2="124" class="wire"/>
+  <line x1="286" y1="124" x2="314" y2="96" class="wire"/>
+  <text x="332" y="116" class="lbl" style="text-anchor: start; font-size: 18px; font-style: italic;">l</text>
+<path d="M 300,130 L 300,180 L 50,180 L 50,132" class="wire"/>
+  <!-- Voltage Source -->
+  <circle cx="50" cy="110" r="22" class="component"/>
+  <line x1="42" y1="102" x2="58" y2="102" class="wire"/>
+  <line x1="50" y1="94" x2="50" y2="110" class="wire"/>
+  <line x1="42" y1="120" x2="58" y2="120" class="wire"/>
+  <text x="85" y="115" class="lbl" style="text-anchor: start; font-size: 14px;">Spannungsquelle</text>
+</svg>

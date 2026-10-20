@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Digital by H.Neemann -->
+<!-- created: Tue Oct 13 09:19:59 CEST 2026 -->
+
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   width="45.3mm"
+   height="52.35mm"
+   viewBox="579 143 302 349">
+<g stroke-linecap="square">
+<g>
+</g>
+<g>
+<path d="M 821,430 L 879,430 L 879,490 L 821,490 Z" stroke="#808080" stroke-width="4.0" fill="none"/>
+<text text-anchor="middle" x="850.0" y="452.0" fill="#808080" style="font-size:24px">&amp;</text>
+</g>
+<g>
+<circle cx="596.0" cy="160.0" r="9.0" stroke="#808080" stroke-width="4.0" fill="none" />
+<circle cx="596.0" cy="160.0" r="15.0" stroke="#808080" stroke-width="4.0" fill="none" />
+<text text-anchor="start" x="625.0" y="169.0" fill="#808080" style="font-size:24px"><tspan style="font-style:italic;">Signal 3</tspan></text>
+</g>
+<g>
+<circle cx="596.0" cy="200.0" r="9.0" stroke="#808080" stroke-width="4.0" fill="none" />
+<circle cx="596.0" cy="200.0" r="15.0" stroke="#808080" stroke-width="4.0" fill="none" />
+<text text-anchor="start" x="625.0" y="209.0" fill="#808080" style="font-size:24px"><tspan style="font-style:italic;">Signal 1</tspan></text>
+</g>
+</g>
+</svg>

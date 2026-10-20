@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<circuit>
+  <version>1</version>
+  <attributes />
+  <visualElements>
+    <!-- Circuit 1: AND -->
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry><string>Label</string><string>e1</string></entry>
+      </elementAttributes>
+      <pos x="120" y="200" />
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry><string>Label</string><string>e2</string></entry>
+      </elementAttributes>
+      <pos x="120" y="240" />
+    </visualElement>
+    <visualElement>
+      <elementName>And</elementName>
+      <elementAttributes />
+      <pos x="220" y="200" />
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry><string>Label</string><string>a1</string></entry>
+      </elementAttributes>
+      <pos x="360" y="220" />
+    </visualElement>
+
+    <!-- Circuit 2: OR -->
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry><string>Label</string><string>e3</string></entry>
+      </elementAttributes>
+      <pos x="520" y="200" />
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry><string>Label</string><string>e4</string></entry>
+      </elementAttributes>
+      <pos x="520" y="240" />
+    </visualElement>
+    <visualElement>
+      <elementName>Or</elementName>
+      <elementAttributes />
+      <pos x="620" y="200" />
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry><string>Label</string><string>a2</string></entry>
+      </elementAttributes>
+      <pos x="760" y="220" />
+    </visualElement>
+
+    <!-- Circuit 3: NOT -->
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry><string>Label</string><string>e5</string></entry>
+      </elementAttributes>
+      <pos x="920" y="220" />
+    </visualElement>
+    <visualElement>
+      <elementName>Not</elementName>
+      <elementAttributes />
+      <pos x="1020" y="220" />
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry><string>Label</string><string>a3</string></entry>
+      </elementAttributes>
+      <pos x="1160" y="220" />
+    </visualElement>
+  </visualElements>
+  <wires>
+    <!-- Circuit 1: AND -->
+    <wire>
+      <p1 x="120" y="200" />
+      <p2 x="220" y="200" />
+    </wire>
+    <wire>
+      <p1 x="120" y="240" />
+      <p2 x="220" y="240" />
+    </wire>
+    <wire>
+      <p1 x="280" y="220" />
+      <p2 x="360" y="220" />
+    </wire>
+
+    <!-- Circuit 2: OR -->
+    <wire>
+      <p1 x="520" y="200" />
+      <p2 x="620" y="200" />
+    </wire>
+    <wire>
+      <p1 x="520" y="240" />
+      <p2 x="620" y="240" />
+    </wire>
+    <wire>
+      <p1 x="680" y="220" />
+      <p2 x="760" y="220" />
+    </wire>
+
+    <!-- Circuit 3: NOT -->
+    <wire>
+      <p1 x="920" y="220" />
+      <p2 x="1020" y="220" />
+    </wire>
+    <wire>
+      <p1 x="1080" y="220" />
+      <p2 x="1160" y="220" />
+    </wire>
+  </wires>
+</circuit>

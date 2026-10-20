@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Digital by H.Neemann (clean layout) -->
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   width="95.0mm"
+   height="55.0mm"
+   viewBox="120 110 590 380">
+    <defs>
+    <style>
+      .wire { stroke: #0284c7; stroke-width: 3.5; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+      .gate { stroke: #334155; stroke-width: 3.5; fill: #ffffff; }
+      .gate-sym { font-family: system-ui, -apple-system, sans-serif; font-size: 22px; font-weight: bold; fill: #1e293b; }
+      .label { font-family: system-ui, -apple-system, sans-serif; font-size: 20px; font-weight: bold; fill: #1e293b; }
+      .sublabel { font-family: system-ui, -apple-system, sans-serif; font-size: 16px; font-weight: 600; fill: #0284c7; }
+      .dot { fill: #0284c7; stroke: none; }
+      .pin-box { stroke: #64748b; stroke-width: 2.5; fill: #ffffff; }
+      .pin-dot { stroke: #0284c7; stroke-width: 3.0; fill: #ffffff; }
+      .out-lamp { stroke: #dc2626; stroke-width: 3.5; fill: #ffffff; }
+      .out-lamp-outer { stroke: #ef4444; stroke-width: 2.5; fill: none; }
+      .neg-bubble { stroke: #334155; stroke-width: 3.0; fill: #ffffff; }
+      .delay-box { stroke: #334155; stroke-width: 3.0; fill: #f8fafc; }
+      .delay-text { font-family: system-ui, -apple-system, sans-serif; font-size: 18px; font-weight: bold; fill: #334155; }
+    </style>
+  </defs>
+
+
+<g stroke-linecap="square">
+<!-- Vertical bus lines -->
+<path d="M 180,140 L 180,300 L 440,300" class="wire"/>
+<path d="M 180,300 L 180,400 L 440,400" class="wire"/>
+<path d="M 240,140 L 240,320 L 440,320" class="wire"/>
+<path d="M 240,320 L 240,420 L 440,420" class="wire"/>
+<path d="M 300,140 L 300,200 L 440,200" class="wire"/>
+<path d="M 300,200 L 300,340 L 380,340" class="wire"/>
+<path d="M 420,340 L 440,340" class="wire"/>
+<path d="M 360,140 L 360,240 L 380,240" class="wire"/>
+<path d="M 420,240 L 440,240" class="wire"/>
+<path d="M 360,240 L 360,440 L 380,440" class="wire"/>
+<path d="M 420,440 L 440,440" class="wire"/>
+
+<!-- Intentional branch dots on bus -->
+<circle cx="180.0" cy="300.0" r="4.5" class="dot"/>
+<circle cx="240.0" cy="320.0" r="4.5" class="dot"/>
+<circle cx="300.0" cy="200.0" r="4.5" class="dot"/>
+<circle cx="360.0" cy="240.0" r="4.5" class="dot"/>
+
+<!-- Inverters (Not gates) -->
+<path d="M 381,230 L 399,230 L 399,250 L 381,250 Z" class="gate"/>
+<circle cx="410.0" cy="240.0" r="6.0" class="neg-bubble"/>
+<path d="M 381,330 L 399,330 L 399,350 L 381,350 Z" class="gate"/>
+<circle cx="410.0" cy="340.0" r="6.0" class="neg-bubble"/>
+<path d="M 381,430 L 399,430 L 399,450 L 381,450 Z" class="gate"/>
+<circle cx="410.0" cy="440.0" r="6.0" class="neg-bubble"/>
+
+<!-- AND Gate 1 (Top) -->
+<path d="M 441,190 L 499,190 L 499,250 L 441,250 Z" class="gate"/>
+<text text-anchor="middle" x="470.0" y="212.0"  class="gate-sym">&amp;</text>
+<text text-anchor="start" x="508.0" y="215.0" class="sublabel">y1</text>
+
+<!-- AND Gate 2 (Middle) -->
+<path d="M 441,290 L 499,290 L 499,350 L 441,350 Z" class="gate"/>
+<text text-anchor="middle" x="470.0" y="312.0"  class="gate-sym">&amp;</text>
+<text text-anchor="start" x="508.0" y="315.0" class="sublabel">y2</text>
+
+<!-- AND Gate 3 (Konsensterm Bottom) -->
+<path d="M 441,390 L 499,390 L 499,450 L 441,450 Z" class="gate"/>
+<text text-anchor="middle" x="470.0" y="412.0"  class="gate-sym">&amp;</text>
+<text text-anchor="start" x="508.0" y="415.0"  style="font-size:18px; fill:#0284c7;"class="label">y3 (Konsens)</text>
+
+<!-- Gate to OR wires -->
+<path d="M 500,220 L 530,220 L 530,280 L 560,280" class="wire"/>
+<path d="M 500,320 L 560,320" class="wire"/>
+<path d="M 500,420 L 530,420 L 530,360 L 560,360" class="wire"/>
+<path d="M 620,320 L 660,320" class="wire"/>
+
+<!-- OR Gate with 3 inputs -->
+<path d="M 561,270 L 619,270 L 619,370 L 561,370 Z" class="gate"/>
+<text text-anchor="middle" x="590.0" y="312.0"  class="gate-sym">≥1</text>
+
+<!-- Output y -->
+<circle cx="676.0" cy="320.0" r="9.0" class="out-lamp"/>
+<circle cx="676.0" cy="320.0" r="15.0" class="out-lamp-outer"/>
+<text text-anchor="start" x="705.0" y="329.0" class="label">y</text>
+
+<!-- Inputs Top -->
+<path d="M 165,110 L 195,110 L 195,140 L 165,140 Z" class="pin-box"/>
+<circle cx="180.0" cy="125.0" r="9.0" class="pin-dot"/>
+<text text-anchor="middle" x="180.0" y="102.0" class="label">x1</text>
+
+<path d="M 225,110 L 255,110 L 255,140 L 225,140 Z" class="pin-box"/>
+<circle cx="240.0" cy="125.0" r="9.0" class="pin-dot"/>
+<text text-anchor="middle" x="240.0" y="102.0" class="label">x2</text>
+
+<path d="M 285,110 L 315,110 L 315,140 L 285,140 Z" class="pin-box"/>
+<circle cx="300.0" cy="125.0" r="9.0" class="pin-dot"/>
+<text text-anchor="middle" x="300.0" y="102.0" class="label">x3</text>
+
+<path d="M 345,110 L 375,110 L 375,140 L 345,140 Z" class="pin-box"/>
+<circle cx="360.0" cy="125.0" r="9.0" class="pin-dot"/>
+<text text-anchor="middle" x="360.0" y="102.0" class="label">x4</text>
+</g>
+</svg>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<circuit>
+  <version>1</version>
+  <attributes/>
+  <visualElements>
+    <!-- Inputs -->
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry><string>Label</string><string>x_2</string></entry>
+      </elementAttributes>
+      <pos x="100" y="140"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry><string>Label</string><string>x_0</string></entry>
+      </elementAttributes>
+      <pos x="100" y="240"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry><string>Label</string><string>x_1</string></entry>
+      </elementAttributes>
+      <pos x="100" y="320"/>
+    </visualElement>
+
+    <!-- Not for x_0 -->
+    <visualElement>
+      <elementName>Not</elementName>
+      <elementAttributes/>
+      <pos x="180" y="240"/>
+    </visualElement>
+
+    <!-- AND1: x_2 AND NOT(x_0) -->
+    <visualElement>
+      <elementName>And</elementName>
+      <elementAttributes/>
+      <pos x="280" y="140"/>
+    </visualElement>
+
+    <!-- AND2: AND1 AND x_0 -->
+    <visualElement>
+      <elementName>And</elementName>
+      <elementAttributes/>
+      <pos x="380" y="160"/>
+    </visualElement>
+
+    <!-- AND3: x_1 AND NOT(x_0) -->
+    <visualElement>
+      <elementName>And</elementName>
+      <elementAttributes/>
+      <pos x="280" y="320"/>
+    </visualElement>
+
+    <!-- OR1: AND3 OR x_0 -->
+    <visualElement>
+      <elementName>Or</elementName>
+      <elementAttributes/>
+      <pos x="380" y="340"/>
+    </visualElement>
+
+    <!-- Final OR: AND2 OR OR1 -->
+    <visualElement>
+      <elementName>Or</elementName>
+      <elementAttributes/>
+      <pos x="480" y="240"/>
+    </visualElement>
+
+    <!-- Output y -->
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry><string>Label</string><string>y</string></entry>
+      </elementAttributes>
+      <pos x="580" y="260"/>
+    </visualElement>
+
+    <visualElement>
+      <elementName>Testcase</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Testdata</string>
+          <testData>
+            <dataString>x_0 x_1 x_2 y
+ 0   0   0  0
+ 0   0   1  0
+ 0   1   0  1
+ 0   1   1  1
+ 1   0   0  1
+ 1   0   1  1
+ 1   1   0  1
+ 1   1   1  1
+</dataString>
+          </testData>
+        </entry>
+      </elementAttributes>
+      <pos x="100" y="80"/>
+    </visualElement>
+  </visualElements>
+  <wires>
+    <!-- x_2 to AND1 -->
+    <wire><p1 x="100" y="140"/><p2 x="280" y="140"/></wire>
+
+    <!-- x_0 branches -->
+    <wire><p1 x="100" y="240"/><p2 x="140" y="240"/></wire>
+    <wire><p1 x="140" y="240"/><p2 x="180" y="240"/></wire>
+    <wire><p1 x="140" y="200"/><p2 x="140" y="240"/></wire>
+    <wire><p1 x="140" y="200"/><p2 x="380" y="200"/></wire>
+    <wire><p1 x="140" y="240"/><p2 x="140" y="380"/></wire>
+    <wire><p1 x="140" y="380"/><p2 x="380" y="380"/></wire>
+
+    <!-- NOT(x_0) branches -->
+    <wire><p1 x="220" y="240"/><p2 x="240" y="240"/></wire>
+    <wire><p1 x="240" y="180"/><p2 x="240" y="240"/></wire>
+    <wire><p1 x="240" y="180"/><p2 x="280" y="180"/></wire>
+    <wire><p1 x="240" y="240"/><p2 x="240" y="360"/></wire>
+    <wire><p1 x="240" y="360"/><p2 x="280" y="360"/></wire>
+
+    <!-- x_1 to AND3 -->
+    <wire><p1 x="100" y="320"/><p2 x="280" y="320"/></wire>
+
+    <!-- AND1 out to AND2 -->
+    <wire><p1 x="340" y="160"/><p2 x="380" y="160"/></wire>
+
+    <!-- AND3 out to OR1 -->
+    <wire><p1 x="340" y="340"/><p2 x="380" y="340"/></wire>
+
+    <!-- AND2 out to final OR -->
+    <wire><p1 x="440" y="180"/><p2 x="460" y="180"/></wire>
+    <wire><p1 x="460" y="180"/><p2 x="460" y="240"/></wire>
+    <wire><p1 x="460" y="240"/><p2 x="480" y="240"/></wire>
+
+    <!-- OR1 out to final OR -->
+    <wire><p1 x="440" y="360"/><p2 x="460" y="360"/></wire>
+    <wire><p1 x="460" y="360"/><p2 x="460" y="280"/></wire>
+    <wire><p1 x="460" y="280"/><p2 x="480" y="280"/></wire>
+
+    <!-- final OR to Out y -->
+    <wire><p1 x="540" y="260"/><p2 x="580" y="260"/></wire>
+  </wires>
+</circuit>

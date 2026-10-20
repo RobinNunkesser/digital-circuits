@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 210" width="100%" height="210px">
+  <defs>
+    <style>
+      .wire { stroke: #0f172a; stroke-width: 3; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+      .component { stroke: #0f172a; stroke-width: 3; fill: #ffffff; }
+      .lbl { font-family: system-ui, -apple-system, sans-serif; font-size: 16px; font-weight: bold; fill: #0f172a; text-anchor: middle; }
+      .lbl-sub { font-family: system-ui, -apple-system, sans-serif; font-size: 13px; font-weight: bold; fill: #0f172a; text-anchor: middle; }
+    </style>
+  </defs>
+<path d="M 50,88 L 50,30 L 130,30" class="wire"/>
+<!-- Parallel switch branch -->
+<path d="M 130,30 L 130,80 L 160,80" class="wire"/>
+  <!-- Switch s -->
+  <circle cx="160" cy="80" r="4" class="component"/>
+  <circle cx="220" cy="80" r="4" class="component"/>
+  <line x1="162" y1="78" x2="208.0" y2="62" class="wire"/>
+  <text x="190.0" y="104" class="lbl" style="font-size: 18px; font-style: italic;">s</text>
+<path d="M 220,80 L 250,80 L 250,170" class="wire"/>
+<!-- Main lamp branch -->
+<path d="M 130,30 L 310,30 L 310,80" class="wire"/>
+  <!-- Lamp -->
+  <circle cx="310" cy="100" r="20" class="component"/>
+  <line x1="296" y1="86" x2="324" y2="114" class="wire"/>
+  <line x1="296" y1="114" x2="324" y2="86" class="wire"/>
+  <text x="342" y="106" class="lbl" style="text-anchor: start; font-size: 18px; font-style: italic;">l</text>
+<path d="M 310,120 L 310,170 L 50,170 L 50,132" class="wire"/>
+  <!-- Voltage Source -->
+  <circle cx="50" cy="110" r="22" class="component"/>
+  <line x1="42" y1="102" x2="58" y2="102" class="wire"/>
+  <line x1="50" y1="94" x2="50" y2="110" class="wire"/>
+  <line x1="42" y1="120" x2="58" y2="120" class="wire"/>
+  <text x="85" y="115" class="lbl" style="text-anchor: start; font-size: 14px;">Spannungsquelle</text>
+</svg>

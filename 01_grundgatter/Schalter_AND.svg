@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 180" width="100%" height="180px">
+  <defs>
+    <style>
+      .wire { stroke: #0f172a; stroke-width: 3; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+      .component { stroke: #0f172a; stroke-width: 3; fill: #ffffff; }
+      .lbl { font-family: system-ui, -apple-system, sans-serif; font-size: 16px; font-weight: bold; fill: #0f172a; text-anchor: middle; }
+      .lbl-sub { font-family: system-ui, -apple-system, sans-serif; font-size: 13px; font-weight: bold; fill: #0f172a; text-anchor: middle; }
+    </style>
+  </defs>
+<path d="M 50,68 L 50,30 L 100,30" class="wire"/>
+  <!-- Switch s₁ -->
+  <circle cx="100" cy="30" r="4" class="component"/>
+  <circle cx="160" cy="30" r="4" class="component"/>
+  <line x1="102" y1="28" x2="148.0" y2="12" class="wire"/>
+  <text x="130.0" y="54" class="lbl" style="font-size: 18px; font-style: italic;">s₁</text>
+<path d="M 160,30 L 200,30" class="wire"/>
+  <!-- Switch s₂ -->
+  <circle cx="200" cy="30" r="4" class="component"/>
+  <circle cx="260" cy="30" r="4" class="component"/>
+  <line x1="202" y1="28" x2="248.0" y2="12" class="wire"/>
+  <text x="230.0" y="54" class="lbl" style="font-size: 18px; font-style: italic;">s₂</text>
+<path d="M 260,30 L 310,30 L 310,70" class="wire"/>
+  <!-- Lamp -->
+  <circle cx="310" cy="90" r="20" class="component"/>
+  <line x1="296" y1="76" x2="324" y2="104" class="wire"/>
+  <line x1="296" y1="104" x2="324" y2="76" class="wire"/>
+  <text x="342" y="96" class="lbl" style="text-anchor: start; font-size: 18px; font-style: italic;">l</text>
+<path d="M 310,110 L 310,150 L 50,150 L 50,112" class="wire"/>
+  <!-- Voltage Source -->
+  <circle cx="50" cy="90" r="22" class="component"/>
+  <line x1="42" y1="82" x2="58" y2="82" class="wire"/>
+  <line x1="50" y1="74" x2="50" y2="90" class="wire"/>
+  <line x1="42" y1="100" x2="58" y2="100" class="wire"/>
+  <text x="85" y="95" class="lbl" style="text-anchor: start; font-size: 14px;">Spannungsquelle</text>
+</svg>

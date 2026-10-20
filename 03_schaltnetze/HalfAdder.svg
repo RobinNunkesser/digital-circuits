@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Digital by H.Neemann -->
+<!-- created: Tue Oct 13 09:20:38 CEST 2026 -->
+
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   width="181.65mm"
+   height="26.25mm"
+   viewBox="202 143 1211 175">
+<g stroke-linecap="square">
+<path d="M 300,160 L 340,160 L 340,180 L 380,180" stroke="#808080" stroke-width="4.0" fill="none"/>
+<path d="M 340,160 L 340,240 L 380,240" stroke="#808080" stroke-width="4.0" fill="none"/>
+<path d="M 300,240 L 340,240 L 340,280 L 380,280" stroke="#808080" stroke-width="4.0" fill="none"/>
+<path d="M 340,240 L 340,220 L 380,220" stroke="#808080" stroke-width="4.0" fill="none"/>
+<path d="M 440,200 L 460,200 L 460,180 L 480,180" stroke="#808080" stroke-width="4.0" fill="none"/>
+<path d="M 440,260 L 460,260 L 460,240 L 480,240" stroke="#808080" stroke-width="4.0" fill="none"/>
+<g>
+<circle cx="340.0" cy="160.0" r="4.0" stroke="#808080" stroke-width="4.0" fill="#808080" />
+<circle cx="340.0" cy="240.0" r="4.0" stroke="#808080" stroke-width="4.0" fill="#808080" />
+</g>
+<g>
+<text text-anchor="start" x="204.0" y="182.0" fill="#808080" style="font-size:24px">Es fehlt ein Diagramm für Const.</text>
+<text text-anchor="start" x="204.0" y="206.0" fill="#808080" style="font-size:24px">Konnte kein Element vom Typ &quot;Const&quot; erzeugen!</text>
+<text text-anchor="start" x="204.0" y="230.0" fill="#808080" style="font-size:24px">class java.lang.String cannot be cast to class java.lang.Long (java.lang.String and java.lang.Long a...</text>
+</g>
+<g>
+<text text-anchor="start" x="204.0" y="262.0" fill="#808080" style="font-size:24px">Es fehlt ein Diagramm für Const.</text>
+<text text-anchor="start" x="204.0" y="286.0" fill="#808080" style="font-size:24px">Konnte kein Element vom Typ &quot;Const&quot; erzeugen!</text>
+<text text-anchor="start" x="204.0" y="310.0" fill="#808080" style="font-size:24px">class java.lang.String cannot be cast to class java.lang.Long (java.lang.String and java.lang.Long a...</text>
+</g>
+<g>
+<circle cx="496.0" cy="240.0" r="9.0" stroke="#808080" stroke-width="4.0" fill="none" />
+<circle cx="496.0" cy="240.0" r="15.0" stroke="#808080" stroke-width="4.0" fill="none" />
+<text text-anchor="start" x="525.0" y="249.0" fill="#808080" style="font-size:24px"><tspan style="font-style:italic;">Carry</tspan></text>
+</g>
+<g>
+<path d="M 381,170 L 439,170 L 439,230 L 381,230 Z" stroke="#808080" stroke-width="4.0" fill="none"/>
+<text text-anchor="middle" x="410.0" y="192.0" fill="#808080" style="font-size:24px">=1</text>
+</g>
+<g>
+<path d="M 381,230 L 439,230 L 439,290 L 381,290 Z" stroke="#808080" stroke-width="4.0" fill="none"/>
+<text text-anchor="middle" x="410.0" y="252.0" fill="#808080" style="font-size:24px">&amp;</text>
+</g>
+<g>
+<circle cx="496.0" cy="180.0" r="9.0" stroke="#808080" stroke-width="4.0" fill="none" />
+<circle cx="496.0" cy="180.0" r="15.0" stroke="#808080" stroke-width="4.0" fill="none" />
+<text text-anchor="start" x="525.0" y="189.0" fill="#808080" style="font-size:24px"><tspan style="font-style:italic;">Sum</tspan></text>
+</g>
+<g>
+<path d="M 269,145 L 299,145 L 299,175 L 269,175 Z" stroke="#808080" stroke-width="4.0" fill="none"/>
+<circle cx="284.0" cy="160.0" r="9.0" stroke="#808080" stroke-width="4.0" fill="none" />
+<text text-anchor="end" x="255.0" y="169.0" fill="#808080" style="font-size:24px"><tspan style="font-style:italic;">e1</tspan></text>
+</g>
+<g>
+<path d="M 269,225 L 299,225 L 299,255 L 269,255 Z" stroke="#808080" stroke-width="4.0" fill="none"/>
+<circle cx="284.0" cy="240.0" r="9.0" stroke="#808080" stroke-width="4.0" fill="none" />
+<text text-anchor="end" x="255.0" y="249.0" fill="#808080" style="font-size:24px"><tspan style="font-style:italic;">e2</tspan></text>
+</g>
+</g>
+</svg>

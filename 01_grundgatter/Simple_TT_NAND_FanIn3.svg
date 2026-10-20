@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Digital by H.Neemann (clean layout) -->
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   width="65.0mm"
+   height="29.0mm"
+   viewBox="126 180 435 170">
+    <defs>
+    <style>
+      .wire { stroke: #0284c7; stroke-width: 3.5; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+      .gate { stroke: #334155; stroke-width: 3.5; fill: #ffffff; }
+      .gate-sym { font-family: system-ui, -apple-system, sans-serif; font-size: 22px; font-weight: bold; fill: #1e293b; }
+      .label { font-family: system-ui, -apple-system, sans-serif; font-size: 20px; font-weight: bold; fill: #1e293b; }
+      .sublabel { font-family: system-ui, -apple-system, sans-serif; font-size: 16px; font-weight: 600; fill: #0284c7; }
+      .dot { fill: #0284c7; stroke: none; }
+      .pin-box { stroke: #64748b; stroke-width: 2.5; fill: #ffffff; }
+      .pin-dot { stroke: #0284c7; stroke-width: 3.0; fill: #ffffff; }
+      .out-lamp { stroke: #dc2626; stroke-width: 3.5; fill: #ffffff; }
+      .out-lamp-outer { stroke: #ef4444; stroke-width: 2.5; fill: none; }
+      .neg-bubble { stroke: #334155; stroke-width: 3.0; fill: #ffffff; }
+      .delay-box { stroke: #334155; stroke-width: 3.0; fill: #f8fafc; }
+      .delay-text { font-family: system-ui, -apple-system, sans-serif; font-size: 18px; font-weight: bold; fill: #334155; }
+    </style>
+  </defs>
+
+
+<g stroke-linecap="square">
+<path d="M 200,200 L 280,200 L 280,240 L 360,240" class="wire"/>
+<path d="M 200,260 L 360,260" class="wire"/>
+<path d="M 200,320 L 280,320 L 280,280 L 360,280" class="wire"/>
+<path d="M 430,260 L 500,260" class="wire"/>
+<g>
+</g>
+<g>
+<path d="M 361,230 L 419,230 L 419,290 L 361,290 Z" class="gate"/>
+<circle cx="426.0" cy="260.0" r="6.0" class="neg-bubble"/>
+<text text-anchor="middle" x="390.0" y="252.0"  class="gate-sym">&amp;</text>
+</g>
+<g>
+<circle cx="516.0" cy="260.0" r="9.0" class="out-lamp"/>
+<circle cx="516.0" cy="260.0" r="15.0" class="out-lamp-outer"/>
+<text text-anchor="start" x="545.0" y="269.0" class="label">l</text>
+</g>
+<g>
+<path d="M 169,185 L 199,185 L 199,215 L 169,215 Z" class="pin-box"/>
+<circle cx="184.0" cy="200.0" r="9.0" class="pin-dot"/>
+<text text-anchor="end" x="155.0" y="209.0" class="label">s1</text>
+</g>
+<g>
+<path d="M 169,245 L 199,245 L 199,275 L 169,275 Z" class="pin-box"/>
+<circle cx="184.0" cy="260.0" r="9.0" class="pin-dot"/>
+<text text-anchor="end" x="155.0" y="269.0" class="label">s2</text>
+</g>
+<g>
+<path d="M 169,305 L 199,305 L 199,335 L 169,335 Z" class="pin-box"/>
+<circle cx="184.0" cy="320.0" r="9.0" class="pin-dot"/>
+<text text-anchor="end" x="155.0" y="329.0" class="label">s3</text>
+</g>
+</g>
+</svg>

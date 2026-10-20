@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Digital by H.Neemann (clean layout) -->
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   width="90.0mm"
+   height="38.0mm"
+   viewBox="120 150 600 250">
+    <defs>
+    <style>
+      .wire { stroke: #0284c7; stroke-width: 3.5; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+      .gate { stroke: #334155; stroke-width: 3.5; fill: #ffffff; }
+      .gate-sym { font-family: system-ui, -apple-system, sans-serif; font-size: 22px; font-weight: bold; fill: #1e293b; }
+      .label { font-family: system-ui, -apple-system, sans-serif; font-size: 20px; font-weight: bold; fill: #1e293b; }
+      .sublabel { font-family: system-ui, -apple-system, sans-serif; font-size: 16px; font-weight: 600; fill: #0284c7; }
+      .dot { fill: #0284c7; stroke: none; }
+      .pin-box { stroke: #64748b; stroke-width: 2.5; fill: #ffffff; }
+      .pin-dot { stroke: #0284c7; stroke-width: 3.0; fill: #ffffff; }
+      .out-lamp { stroke: #dc2626; stroke-width: 3.5; fill: #ffffff; }
+      .out-lamp-outer { stroke: #ef4444; stroke-width: 2.5; fill: none; }
+      .neg-bubble { stroke: #334155; stroke-width: 3.0; fill: #ffffff; }
+      .delay-box { stroke: #334155; stroke-width: 3.0; fill: #f8fafc; }
+      .delay-text { font-family: system-ui, -apple-system, sans-serif; font-size: 18px; font-weight: bold; fill: #334155; }
+    </style>
+  </defs>
+
+
+<g stroke-linecap="square">
+<!-- x1 bus and taps -->
+<path d="M 180,180 L 240,180 L 320,180" class="wire"/>
+<path d="M 240,180 L 240,280 L 320,280" class="wire"/>
+<path d="M 240,280 L 240,360 L 320,360" class="wire"/>
+<circle cx="240.0" cy="180.0" r="4.5" class="dot"/>
+<circle cx="240.0" cy="280.0" r="4.5" class="dot"/>
+
+<!-- x2 and x3 wires -->
+<path d="M 180,240 L 280,240 L 280,220 L 320,220" class="wire"/>
+<path d="M 180,320 L 320,320" class="wire"/>
+
+<!-- Stage 1 gates -->
+<!-- OR Gate 1 (Top) -->
+<path d="M 321,170 L 379,170 L 379,230 L 321,230 Z" class="gate"/>
+<text text-anchor="middle" x="350.0" y="192.0"  class="gate-sym">≥1</text>
+
+<!-- AND Gate 2 (Middle) -->
+<path d="M 321,270 L 379,270 L 379,330 L 321,330 Z" class="gate"/>
+<text text-anchor="middle" x="350.0" y="292.0"  class="gate-sym">&amp;</text>
+
+<!-- Inverter (Bottom) -->
+<path d="M 321,350 L 339,350 L 339,370 L 321,370 Z" class="gate"/>
+<circle cx="350.0" cy="360.0" r="6.0" class="neg-bubble"/>
+
+<!-- Connecting wires to Stage 2 -->
+<path d="M 360,360 L 420,360 L 420,340 L 460,340" class="wire"/>
+<path d="M 380,300 L 460,300" class="wire"/>
+
+<!-- Stage 2: AND Gate -->
+<path d="M 461,290 L 519,290 L 519,350 L 461,350 Z" class="gate"/>
+<text text-anchor="middle" x="490.0" y="312.0"  class="gate-sym">&amp;</text>
+
+<!-- Connecting wires to Stage 3 Final OR -->
+<path d="M 380,200 L 520,200 L 520,220 L 580,220" class="wire"/>
+<path d="M 520,320 L 550,320 L 550,260 L 580,260" class="wire"/>
+
+<!-- Stage 3: Final OR Gate -->
+<path d="M 581,210 L 639,210 L 639,270 L 581,270 Z" class="gate"/>
+<text text-anchor="middle" x="610.0" y="232.0"  class="gate-sym">≥1</text>
+<path d="M 640,240 L 680,240" class="wire"/>
+
+<!-- Output y -->
+<circle cx="696.0" cy="240.0" r="9.0" class="out-lamp"/>
+<circle cx="696.0" cy="240.0" r="15.0" class="out-lamp-outer"/>
+<text text-anchor="start" x="725.0" y="249.0" class="label">y</text>
+
+<!-- Inputs Left -->
+<path d="M 149,165 L 179,165 L 179,195 L 149,195 Z" class="gate"/>
+<circle cx="164.0" cy="180.0" r="9.0" class="pin-dot"/>
+<text text-anchor="end" x="135.0" y="189.0" class="label">x1</text>
+
+<path d="M 149,225 L 179,225 L 179,255 L 149,255 Z" class="gate"/>
+<circle cx="164.0" cy="240.0" r="9.0" class="pin-dot"/>
+<text text-anchor="end" x="135.0" y="249.0" class="label">x2</text>
+
+<path d="M 149,305 L 179,305 L 179,335 L 149,335 Z" class="gate"/>
+<circle cx="164.0" cy="320.0" r="9.0" class="pin-dot"/>
+<text text-anchor="end" x="135.0" y="329.0" class="label">x3</text>
+</g>
+</svg>

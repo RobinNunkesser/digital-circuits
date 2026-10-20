@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<circuit>
+  <version>1</version>
+  <attributes />
+  <visualElements>
+    <visualElement>
+      <elementName>And</elementName>
+      <elementAttributes />
+      <pos x="820" y="440" />
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>Signal 3</string>
+        </entry>
+      </elementAttributes>
+      <pos x="580" y="160" />
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>Signal 1</string>
+        </entry>
+      </elementAttributes>
+      <pos x="580" y="200" />
+    </visualElement>
+  </visualElements>
+  <wires />
+</circuit>
