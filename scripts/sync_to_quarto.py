@@ -7,7 +7,13 @@ from pathlib import Path
 
 def sync():
     base_dir = Path(__file__).resolve().parent.parent
-    work_repo = base_dir.parents[3]
+    work_repo = None
+    for p in base_dir.parents:
+        if (p / "md" / "quarto").is_dir():
+            work_repo = p
+            break
+    if not work_repo:
+        work_repo = base_dir.parents[4]
     quarto_sim_dir = work_repo / "md" / "quarto" / "gdi" / "simulations"
     quarto_sim_dir.mkdir(parents=True, exist_ok=True)
 

@@ -4,26 +4,6 @@
   <attributes />
   <visualElements>
     <visualElement>
-      <elementName>Const</elementName>
-      <elementAttributes>
-        <entry>
-          <string>Value</string>
-          <string>0</string>
-        </entry>
-      </elementAttributes>
-      <pos x="200" y="220" />
-    </visualElement>
-    <visualElement>
-      <elementName>Const</elementName>
-      <elementAttributes>
-        <entry>
-          <string>Value</string>
-          <string>0</string>
-        </entry>
-      </elementAttributes>
-      <pos x="200" y="280" />
-    </visualElement>
-    <visualElement>
       <elementName>XOr</elementName>
       <elementAttributes />
       <pos x="440" y="200" />

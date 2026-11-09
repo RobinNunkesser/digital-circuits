@@ -11,7 +11,7 @@ aus vier Volladdierern.}}</string>
   </attributes>
   <visualElements>
     <visualElement>
-      <elementName>Volladdierer.dig</elementName>
+      <elementName>FullAdder.dig</elementName>
       <elementAttributes/>
       <pos x="280" y="380"/>
     </visualElement>
@@ -62,7 +62,7 @@ aus vier Volladdierern.}}</string>
       <pos x="340" y="360"/>
     </visualElement>
     <visualElement>
-      <elementName>Volladdierer.dig</elementName>
+      <elementName>FullAdder.dig</elementName>
       <elementAttributes/>
       <pos x="400" y="380"/>
     </visualElement>
@@ -113,7 +113,7 @@ aus vier Volladdierern.}}</string>
       <pos x="460" y="360"/>
     </visualElement>
     <visualElement>
-      <elementName>Volladdierer.dig</elementName>
+      <elementName>FullAdder.dig</elementName>
       <elementAttributes/>
       <pos x="520" y="380"/>
     </visualElement>
@@ -164,7 +164,7 @@ aus vier Volladdierern.}}</string>
       <pos x="580" y="360"/>
     </visualElement>
     <visualElement>
-      <elementName>Volladdierer.dig</elementName>
+      <elementName>FullAdder.dig</elementName>
       <elementAttributes/>
       <pos x="640" y="380"/>
     </visualElement>
