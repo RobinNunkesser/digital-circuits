@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 480" width="100%" height="100%" style="background:#ffffff; font-family:system-ui, -apple-system, sans-serif;">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 10 5 L 0 8.5 z" fill="#1e293b"/>
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="440" y="32" text-anchor="middle" font-size="20" font-weight="bold" fill="#0f172a">Klassifikation von Hazards (Störimpulsen)</text>
+
+  <!-- Group 1: Statische Hazards (Top Row) -->
+  <rect x="25" y="55" width="405" height="395" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5"/>
+  <text x="227" y="85" text-anchor="middle" font-size="16" font-weight="bold" fill="#0369a1">Statische Hazards</text>
+  <text x="227" y="105" text-anchor="middle" font-size="12" fill="#64748b">Ausgangswert sollte vor und nach dem Schalten unverändert bleiben</text>
+
+  <!-- Statischer 1-Hazard -->
+  <g transform="translate(45, 120)">
+    <rect x="0" y="0" width="365" height="135" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+    <text x="15" y="24" font-size="13" font-weight="bold" fill="#0f172a">Statischer 1-Hazard (Soll: 1 → 1)</text>
+    <text x="350" y="24" text-anchor="end" font-size="11" font-weight="bold" fill="#dc2626">1 → 0 → 1</text>
+    
+    <!-- Coordinate lines -->
+    <line x1="40" y1="95" x2="330" y2="95" stroke="#94a3b8" stroke-width="1"/>
+    <line x1="40" y1="50" x2="330" y2="50" stroke="#e2e8f0" stroke-dasharray="3 3"/>
+    <text x="30" y="54" font-size="11" fill="#64748b" text-anchor="end">1</text>
+    <text x="30" y="99" font-size="11" fill="#64748b" text-anchor="end">0</text>
+    
+    <!-- Waveform: 1 -> 0 -> 1 -->
+    <path d="M 40 50 L 140 50 L 145 95 L 185 95 L 190 50 L 330 50" fill="none" stroke="#dc2626" stroke-width="2.5" stroke-linejoin="round"/>
+    <!-- Glitch highlight box -->
+    <rect x="135" y="42" width="60" height="60" rx="4" fill="#fee2e2" fill-opacity="0.4" stroke="#ef4444" stroke-width="1" stroke-dasharray="2 2"/>
+    <text x="165" y="122" font-size="11" font-weight="bold" fill="#dc2626" text-anchor="middle">Störeinbruch (Glitch)</text>
+  </g>
+
+  <!-- Statischer 0-Hazard -->
+  <g transform="translate(45, 275)">
+    <rect x="0" y="0" width="365" height="135" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+    <text x="15" y="24" font-size="13" font-weight="bold" fill="#0f172a">Statischer 0-Hazard (Soll: 0 → 0)</text>
+    <text x="350" y="24" text-anchor="end" font-size="11" font-weight="bold" fill="#dc2626">0 → 1 → 0</text>
+    
+    <!-- Coordinate lines -->
+    <line x1="40" y1="95" x2="330" y2="95" stroke="#94a3b8" stroke-width="1"/>
+    <line x1="40" y1="50" x2="330" y2="50" stroke="#e2e8f0" stroke-dasharray="3 3"/>
+    <text x="30" y="54" font-size="11" fill="#64748b" text-anchor="end">1</text>
+    <text x="30" y="99" font-size="11" fill="#64748b" text-anchor="end">0</text>
+    
+    <!-- Waveform: 0 -> 1 -> 0 -->
+    <path d="M 40 95 L 140 95 L 145 50 L 185 50 L 190 95 L 330 95" fill="none" stroke="#dc2626" stroke-width="2.5" stroke-linejoin="round"/>
+    <!-- Glitch highlight box -->
+    <rect x="135" y="42" width="60" height="60" rx="4" fill="#fee2e2" fill-opacity="0.4" stroke="#ef4444" stroke-width="1" stroke-dasharray="2 2"/>
+    <text x="165" y="122" font-size="11" font-weight="bold" fill="#dc2626" text-anchor="middle">Störspitze (Glitch)</text>
+  </g>
+
+  <!-- Group 2: Dynamische Hazards (Right Column) -->
+  <rect x="450" y="55" width="405" height="395" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5"/>
+  <text x="652" y="85" text-anchor="middle" font-size="16" font-weight="bold" fill="#7c3aed">Dynamische Hazards</text>
+  <text x="652" y="105" text-anchor="middle" font-size="12" fill="#64748b">Ausgangswert wechselt mit mehrfachem Fluktuieren</text>
+
+  <!-- Dynamischer 1-Hazard (0 -> 1) -->
+  <g transform="translate(470, 120)">
+    <rect x="0" y="0" width="365" height="135" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+    <text x="15" y="24" font-size="13" font-weight="bold" fill="#0f172a">Dynamischer 1-Hazard (Wechsel 0 → 1)</text>
+    <text x="350" y="24" text-anchor="end" font-size="11" font-weight="bold" fill="#7c3aed">0 → 1 → 0 → 1</text>
+    
+    <!-- Coordinate lines -->
+    <line x1="40" y1="95" x2="330" y2="95" stroke="#94a3b8" stroke-width="1"/>
+    <line x1="40" y1="50" x2="330" y2="50" stroke="#e2e8f0" stroke-dasharray="3 3"/>
+    <text x="30" y="54" font-size="11" fill="#64748b" text-anchor="end">1</text>
+    <text x="30" y="99" font-size="11" fill="#64748b" text-anchor="end">0</text>
+    
+    <!-- Waveform: 0 -> 1 -> 0 -> 1 -->
+    <path d="M 40 95 L 120 95 L 125 50 L 160 50 L 165 95 L 205 95 L 210 50 L 330 50" fill="none" stroke="#7c3aed" stroke-width="2.5" stroke-linejoin="round"/>
+    <rect x="115" y="42" width="105" height="60" rx="4" fill="#ede9fe" fill-opacity="0.4" stroke="#8b5cf6" stroke-width="1" stroke-dasharray="2 2"/>
+    <text x="167" y="122" font-size="11" font-weight="bold" fill="#7c3aed" text-anchor="middle">Dreifach-Flanke (Oszillation)</text>
+  </g>
+
+  <!-- Dynamischer 0-Hazard (1 -> 0) -->
+  <g transform="translate(470, 275)">
+    <rect x="0" y="0" width="365" height="135" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+    <text x="15" y="24" font-size="13" font-weight="bold" fill="#0f172a">Dynamischer 0-Hazard (Wechsel 1 → 0)</text>
+    <text x="350" y="24" text-anchor="end" font-size="11" font-weight="bold" fill="#7c3aed">1 → 0 → 1 → 0</text>
+    
+    <!-- Coordinate lines -->
+    <line x1="40" y1="95" x2="330" y2="95" stroke="#94a3b8" stroke-width="1"/>
+    <line x1="40" y1="50" x2="330" y2="50" stroke="#e2e8f0" stroke-dasharray="3 3"/>
+    <text x="30" y="54" font-size="11" fill="#64748b" text-anchor="end">1</text>
+    <text x="30" y="99" font-size="11" fill="#64748b" text-anchor="end">0</text>
+    
+    <!-- Waveform: 1 -> 0 -> 1 -> 0 -->
+    <path d="M 40 50 L 120 50 L 125 95 L 160 95 L 165 50 L 205 50 L 210 95 L 330 95" fill="none" stroke="#7c3aed" stroke-width="2.5" stroke-linejoin="round"/>
+    <rect x="115" y="42" width="105" height="60" rx="4" fill="#ede9fe" fill-opacity="0.4" stroke="#8b5cf6" stroke-width="1" stroke-dasharray="2 2"/>
+    <text x="167" y="122" font-size="11" font-weight="bold" fill="#7c3aed" text-anchor="middle">Dreifach-Flanke (Oszillation)</text>
+  </g>
+
+  <!-- Time axis note -->
+  <line x1="720" y1="462" x2="830" y2="462" stroke="#1e293b" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="845" y="466" font-size="13" font-weight="bold" fill="#1e293b">Zeit t</text>
+</svg>

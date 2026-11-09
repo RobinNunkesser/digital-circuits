@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 420" width="100%" height="100%" style="background:#ffffff; font-family:system-ui, -apple-system, sans-serif;">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 10 5 L 0 8.5 z" fill="#1e293b"/>
+    </marker>
+    <marker id="arrow-blue" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 10 5 L 0 8.5 z" fill="#0284c7"/>
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="430" y="32" text-anchor="middle" font-size="19" font-weight="bold" fill="#0f172a">Reales Zeitverhalten eines Digitalimpulses</text>
+
+  <!-- Voltage level dashed lines -->
+  <!-- 100% (y = 80), 90% (y = 110), 50% (y = 210), 10% (y = 310), 0% (y = 340) -->
+  <g stroke="#cbd5e1" stroke-dasharray="4 4" stroke-width="1.2">
+    <line x1="100" y1="80" x2="780" y2="80"/>
+    <line x1="100" y1="106" x2="780" y2="106"/>
+    <line x1="100" y1="210" x2="780" y2="210"/>
+    <line x1="100" y1="314" x2="780" y2="314"/>
+    <line x1="100" y1="340" x2="780" y2="340"/>
+  </g>
+
+  <!-- Y-Axis labels -->
+  <g font-size="13" fill="#64748b" text-anchor="end" font-weight="600">
+    <text x="90" y="85">100% (U₀)</text>
+    <text x="90" y="111">90%</text>
+    <text x="90" y="215">50%</text>
+    <text x="90" y="319">10%</text>
+    <text x="90" y="345">0%</text>
+  </g>
+
+  <!-- Ideal input pulse (dashed gray) -->
+  <path d="M 110 340 L 170 340 L 170 80 L 510 80 L 510 340 L 780 340" fill="none" stroke="#94a3b8" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="180" y="70" font-size="12" fill="#64748b" font-weight="bold">Idealer Eingangsimpuls</text>
+
+  <!-- Real output waveform (solid blue) -->
+  <!-- Starts at (110,340), delay to (230,340), rises with S-curve from (230,340) to (310,80) passing (246,314), (270,210), (294,106), plateaus to (550,80), falls from (550,80) to (650,340) passing (566,106), (595,210), (624,314), ends at (780,340) -->
+  <path d="M 110 340 L 230 340 C 242 340 248 318 252 300 C 262 250 278 170 288 120 C 292 102 298 80 315 80 L 550 80 C 562 80 568 102 572 120 C 582 170 598 250 608 300 C 612 318 618 340 635 340 L 780 340" fill="none" stroke="#0284c7" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="380" y="105" font-size="13" fill="#0284c7" font-weight="bold">Reales Ausgangssignal</text>
+
+  <!-- Time measurement markers (vertical guide lines) -->
+  <g stroke="#94a3b8" stroke-width="1" stroke-dasharray="2 3">
+    <!-- t0: Input rise -->
+    <line x1="170" y1="50" x2="170" y2="390"/>
+    <!-- 10% rise -->
+    <line x1="250" y1="314" x2="250" y2="390"/>
+    <!-- 90% rise -->
+    <line x1="295" y1="106" x2="295" y2="390"/>
+    <!-- Input fall -->
+    <line x1="510" y1="50" x2="510" y2="390"/>
+    <!-- 90% fall -->
+    <line x1="570" y1="106" x2="570" y2="390"/>
+    <!-- 10% fall -->
+    <line x1="615" y1="314" x2="615" y2="390"/>
+  </g>
+
+  <!-- Double arrows for intervals -->
+  <!-- Verzögerungszeit t_D: 170 to 250 -->
+  <line x1="173" y1="365" x2="247" y2="365" stroke="#0f172a" stroke-width="1.8" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+  <text x="210" y="385" font-size="12" font-weight="bold" fill="#0f172a" text-anchor="middle">t<tspan baseline-shift="sub" font-size="9">D</tspan></text>
+  <text x="210" y="400" font-size="10" fill="#64748b" text-anchor="middle">(Verzögerung)</text>
+
+  <!-- Anstiegszeit t_R: 250 to 295 -->
+  <line x1="253" y1="365" x2="292" y2="365" stroke="#0f172a" stroke-width="1.8" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+  <text x="272" y="385" font-size="12" font-weight="bold" fill="#0f172a" text-anchor="middle">t<tspan baseline-shift="sub" font-size="9">R</tspan></text>
+  <text x="272" y="400" font-size="10" fill="#64748b" text-anchor="middle">(Anstieg 10%-90%)</text>
+
+  <!-- Speicherzeit t_S: 510 to 570 -->
+  <line x1="513" y1="365" x2="567" y2="365" stroke="#0f172a" stroke-width="1.8" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+  <text x="540" y="385" font-size="12" font-weight="bold" fill="#0f172a" text-anchor="middle">t<tspan baseline-shift="sub" font-size="9">S</tspan></text>
+  <text x="540" y="400" font-size="10" fill="#64748b" text-anchor="middle">(Speicherzeit)</text>
+
+  <!-- Abfallzeit t_F: 570 to 615 -->
+  <line x1="573" y1="365" x2="612" y2="365" stroke="#0f172a" stroke-width="1.8" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+  <text x="592" y="385" font-size="12" font-weight="bold" fill="#0f172a" text-anchor="middle">t<tspan baseline-shift="sub" font-size="9">F</tspan></text>
+  <text x="592" y="400" font-size="10" fill="#64748b" text-anchor="middle">(Abfall 90%-10%)</text>
+
+  <!-- Time arrow axis -->
+  <line x1="100" y1="340" x2="810" y2="340" stroke="#1e293b" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="825" y="345" font-size="14" font-weight="bold" fill="#1e293b">t</text>
+</svg>

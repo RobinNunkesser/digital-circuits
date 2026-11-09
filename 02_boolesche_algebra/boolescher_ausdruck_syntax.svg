@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 400" width="100%" height="100%" style="background:#ffffff; font-family:system-ui, -apple-system, sans-serif;">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 10 5 L 0 8.5 z" fill="#0284c7"/>
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="270" y="30" text-anchor="middle" font-size="17" font-weight="bold" fill="#0f172a">Induktiver Aufbau Boolescher Ausdrücke</text>
+
+  <!-- Main Start Node -->
+  <rect x="25" y="170" width="115" height="50" rx="8" fill="#0284c7" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="82" y="195" text-anchor="middle" font-size="13" font-weight="bold" fill="#ffffff">Boolescher</text>
+  <text x="82" y="211" text-anchor="middle" font-size="13" font-weight="bold" fill="#ffffff">Ausdruck E</text>
+
+  <!-- Branches -->
+  <!-- Branch 1: Konstante (Top) -->
+  <path d="M 140 185 C 170 185 180 75 220 75 L 245 75" fill="none" stroke="#0284c7" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="245" y="52" width="265" height="46" rx="6" fill="#f0fdf4" stroke="#86efac" stroke-width="1.2"/>
+  <text x="260" y="74" font-size="12" font-weight="bold" fill="#166534">Konstante:</text>
+  <text x="345" y="75" font-size="13" font-weight="bold" fill="#0f172a">0  oder  1</text>
+  <text x="260" y="90" font-size="10.5" fill="#64748b">(Falsch / Wahr)</text>
+
+  <!-- Branch 2: Variable -->
+  <path d="M 140 190 C 170 190 185 135 220 135 L 245 135" fill="none" stroke="#0284c7" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="245" y="112" width="265" height="46" rx="6" fill="#eff6ff" stroke="#93c5fd" stroke-width="1.2"/>
+  <text x="260" y="134" font-size="12" font-weight="bold" fill="#1e40af">Variable:</text>
+  <text x="330" y="135" font-size="13" font-weight="bold" fill="#0f172a">x₁, x₂, …, x<tspan baseline-shift="sub" font-size="10">n</tspan></text>
+  <text x="260" y="150" font-size="10.5" fill="#64748b">(Freie Eingangsvariablen)</text>
+
+  <!-- Branch 3: Negation -->
+  <path d="M 140 195 L 245 195" fill="none" stroke="#0284c7" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="245" y="172" width="265" height="46" rx="6" fill="#fef2f2" stroke="#fca5a5" stroke-width="1.2"/>
+  <text x="260" y="194" font-size="12" font-weight="bold" fill="#991b1b">Negation:</text>
+  <text x="335" y="195" font-size="14" font-weight="bold" fill="#0f172a">¬ E  bzw.  Ē</text>
+  <text x="260" y="210" font-size="10.5" fill="#64748b">(NOT-Verknüpfung)</text>
+
+  <!-- Branch 4: Konjunktion -->
+  <path d="M 140 200 C 170 200 185 255 220 255 L 245 255" fill="none" stroke="#0284c7" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="245" y="232" width="265" height="46" rx="6" fill="#faf5ff" stroke="#d8b4fe" stroke-width="1.2"/>
+  <text x="260" y="254" font-size="12" font-weight="bold" fill="#6b21a8">Konjunktion:</text>
+  <text x="350" y="255" font-size="13" font-weight="bold" fill="#0f172a">( E₁ ∧ E₂ )</text>
+  <text x="260" y="270" font-size="10.5" fill="#64748b">(AND-Verknüpfung, E₁ · E₂)</text>
+
+  <!-- Branch 5: Disjunktion -->
+  <path d="M 140 205 C 170 205 180 315 220 315 L 245 315" fill="none" stroke="#0284c7" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="245" y="292" width="265" height="46" rx="6" fill="#fffbeb" stroke="#fcd34d" stroke-width="1.2"/>
+  <text x="260" y="314" font-size="12" font-weight="bold" fill="#92400e">Disjunktion:</text>
+  <text x="350" y="315" font-size="13" font-weight="bold" fill="#0f172a">( E₁ ∨ E₂ )</text>
+  <text x="260" y="330" font-size="10.5" fill="#64748b">(OR-Verknüpfung, E₁ + E₂)</text>
+
+  <!-- Klammerungs-Hinweis -->
+  <rect x="25" y="355" width="485" height="34" rx="5" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="270" y="376" text-anchor="middle" font-size="11.5" fill="#475569">Operatoren-Rangfolge: <tspan font-weight="bold" fill="#0f172a">¬ (NOT)</tspan> bindet stärker als <tspan font-weight="bold" fill="#0f172a">∧ (AND)</tspan> bindet stärker als <tspan font-weight="bold" fill="#0f172a">∨ (OR)</tspan></text>
+</svg>

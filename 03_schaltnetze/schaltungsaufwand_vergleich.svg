@@ -1,0 +1,194 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 500" width="100%" height="100%" style="background:#ffffff; font-family:system-ui, -apple-system, sans-serif;">
+  <defs>
+    <style>
+      .gate { fill: #f8fafc; stroke: #0f172a; stroke-width: 1.8; }
+      .gate-text { font-size: 15px; font-weight: bold; fill: #0f172a; text-anchor: middle; dominant-baseline: central; }
+      .wire { fill: none; stroke: #0284c7; stroke-width: 1.8; }
+      .input-text { font-size: 11px; fill: #64748b; font-weight: 600; }
+    </style>
+  </defs>
+
+  <!-- Title -->
+  <text x="490" y="32" text-anchor="middle" font-size="20" font-weight="bold" fill="#0f172a">Vergleich des Schaltungsaufwands</text>
+
+  <!-- ==================== CARD 1: Originalschaltung ==================== -->
+  <rect x="20" y="55" width="295" height="425" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="167" y="82" text-anchor="middle" font-size="16" font-weight="bold" fill="#0369a1">Originalschaltung</text>
+
+  <!-- Circuit 1 diagram -->
+  <g transform="translate(35, 105)">
+    <!-- Inputs x1, x2, x3, x4 -->
+    <text x="0" y="25" class="input-text">x₁</text>
+    <text x="0" y="55" class="input-text">x₂</text>
+    <text x="0" y="115" class="input-text">x₃</text>
+    <text x="0" y="165" class="input-text">x₄</text>
+
+    <!-- Stage 1: XOR gate (=1) -->
+    <line x1="15" y1="25" x2="40" y2="25" class="wire"/>
+    <line x1="15" y1="55" x2="40" y2="55" class="wire"/>
+    <rect x="40" y="15" width="36" height="50" rx="3" class="gate"/>
+    <text x="58" y="40" class="gate-text">=1</text>
+    <line x1="76" y1="40" x2="110" y2="40" class="wire"/>
+
+    <!-- Wire from x1 down to AND2 -->
+    <circle cx="25" cy="25" r="2.5" fill="#0284c7"/>
+    <line x1="25" y1="25" x2="25" y2="105" class="wire"/>
+    <line x1="25" y1="105" x2="110" y2="105" class="wire"/>
+
+    <!-- Stage 2: AND1 (top) and AND2 (bottom) -->
+    <!-- AND1: gets XOR output and x4 -->
+    <rect x="110" y="25" width="36" height="45" rx="3" class="gate"/>
+    <text x="128" y="47" class="gate-text">&amp;</text>
+    <line x1="15" y1="165" x2="95" y2="165" class="wire"/>
+    <line x1="95" y1="165" x2="95" y2="58" class="wire"/>
+    <line x1="95" y1="58" x2="110" y2="58" class="wire"/>
+
+    <!-- AND2: gets x1 and x3 -->
+    <line x1="15" y1="115" x2="110" y2="115" class="wire"/>
+    <rect x="110" y="95" width="36" height="45" rx="3" class="gate"/>
+    <text x="128" y="117" class="gate-text">&amp;</text>
+
+    <!-- Stage 3: OR gate combining AND1 and AND2 -->
+    <line x1="146" y1="47" x2="185" y2="47" class="wire"/>
+    <line x1="185" y1="47" x2="185" y2="75" class="wire"/>
+    <line x1="185" y1="75" x2="195" y2="75" class="wire"/>
+
+    <line x1="146" y1="117" x2="185" y2="117" class="wire"/>
+    <line x1="185" y1="117" x2="185" y2="95" class="wire"/>
+    <line x1="185" y1="95" x2="195" y2="95" class="wire"/>
+
+    <rect x="195" y="65" width="36" height="50" rx="3" class="gate"/>
+    <text x="213" y="90" class="gate-text">≥1</text>
+
+    <!-- Output y -->
+    <line x1="231" y1="90" x2="260" y2="90" class="wire"/>
+    <text x="265" y="94" font-size="13" font-weight="bold" fill="#0f172a">y</text>
+  </g>
+
+  <!-- Metrics box 1 -->
+  <rect x="35" y="325" width="265" height="135" rx="6" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="50" y="352" font-size="13" font-weight="bold" fill="#0f172a">Schaltungskennzahlen:</text>
+  <text x="50" y="378" font-size="12" fill="#334155">• Gatteranzahl: <tspan font-weight="bold" fill="#0284c7">C<tspan baseline-shift="sub" font-size="9">A</tspan> = 4</tspan></text>
+  <text x="50" y="402" font-size="12" fill="#334155">• Schaltungstiefe: <tspan font-weight="bold" fill="#dc2626">C<tspan baseline-shift="sub" font-size="9">S</tspan> = 3</tspan></text>
+  <text x="50" y="426" font-size="12" fill="#334155">• Gattereingänge: <tspan font-weight="bold">8 Pins</tspan></text>
+  <text x="50" y="448" font-size="11" fill="#64748b">Hohe Laufzeit, minimale Gatter</text>
+
+
+  <!-- ==================== CARD 2: Disjunktive Form (DNF) ==================== -->
+  <rect x="342" y="55" width="295" height="425" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="490" y="82" text-anchor="middle" font-size="16" font-weight="bold" fill="#0369a1">Disjunktive Form (DNF)</text>
+
+  <!-- Circuit 2 diagram -->
+  <g transform="translate(360, 105)">
+    <!-- 4 parallel AND gates -->
+    <!-- AND 1 -->
+    <line x1="10" y1="20" x2="45" y2="20" class="wire"/>
+    <line x1="10" y1="28" x2="45" y2="28" class="wire"/>
+    <line x1="10" y1="36" x2="45" y2="36" class="wire"/>
+    <rect x="45" y="12" width="34" height="32" rx="3" class="gate"/>
+    <text x="62" y="28" class="gate-text">&amp;</text>
+
+    <!-- AND 2 -->
+    <line x1="10" y1="65" x2="45" y2="65" class="wire"/>
+    <line x1="10" y1="73" x2="45" y2="73" class="wire"/>
+    <line x1="10" y1="81" x2="45" y2="81" class="wire"/>
+    <rect x="45" y="57" width="34" height="32" rx="3" class="gate"/>
+    <text x="62" y="73" class="gate-text">&amp;</text>
+
+    <!-- AND 3 -->
+    <line x1="10" y1="110" x2="45" y2="110" class="wire"/>
+    <line x1="10" y1="118" x2="45" y2="118" class="wire"/>
+    <line x1="10" y1="126" x2="45" y2="126" class="wire"/>
+    <rect x="45" y="102" width="34" height="32" rx="3" class="gate"/>
+    <text x="62" y="118" class="gate-text">&amp;</text>
+
+    <!-- AND 4 -->
+    <line x1="10" y1="155" x2="45" y2="155" class="wire"/>
+    <line x1="10" y1="163" x2="45" y2="163" class="wire"/>
+    <line x1="10" y1="171" x2="45" y2="171" class="wire"/>
+    <rect x="45" y="147" width="34" height="32" rx="3" class="gate"/>
+    <text x="62" y="163" class="gate-text">&amp;</text>
+
+    <!-- Wires to 4-input OR gate -->
+    <line x1="79" y1="28" x2="160" y2="28" class="wire"/>
+    <line x1="160" y1="28" x2="160" y2="75" class="wire"/>
+    <line x1="160" y1="75" x2="175" y2="75" class="wire"/>
+
+    <line x1="79" y1="73" x2="175" y2="73" class="wire"/>
+    <line x1="79" y1="118" x2="175" y2="118" class="wire"/>
+
+    <line x1="79" y1="163" x2="160" y2="163" class="wire"/>
+    <line x1="160" y1="163" x2="160" y2="125" class="wire"/>
+    <line x1="160" y1="125" x2="175" y2="125" class="wire"/>
+
+    <!-- 4-input OR gate -->
+    <rect x="175" y="60" width="36" height="75" rx="3" class="gate"/>
+    <text x="193" y="97" class="gate-text">≥1</text>
+
+    <!-- Output y -->
+    <line x1="211" y1="97" x2="240" y2="97" class="wire"/>
+    <text x="245" y="101" font-size="13" font-weight="bold" fill="#0f172a">y</text>
+  </g>
+
+  <!-- Metrics box 2 -->
+  <rect x="357" y="325" width="265" height="135" rx="6" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="372" y="352" font-size="13" font-weight="bold" fill="#0f172a">Schaltungskennzahlen:</text>
+  <text x="372" y="378" font-size="12" fill="#334155">• Gatteranzahl: <tspan font-weight="bold" fill="#dc2626">C<tspan baseline-shift="sub" font-size="9">A</tspan> = 5</tspan></text>
+  <text x="372" y="402" font-size="12" fill="#334155">• Schaltungstiefe: <tspan font-weight="bold" fill="#16a34a">C<tspan baseline-shift="sub" font-size="9">S</tspan> = 2</tspan></text>
+  <text x="372" y="426" font-size="12" fill="#334155">• Gattereingänge: <tspan font-weight="bold" fill="#dc2626">16 Pins (4×3+4)</tspan></text>
+  <text x="372" y="448" font-size="11" fill="#64748b">Schnell, aber maximaler Flächenbedarf</text>
+
+
+  <!-- ==================== CARD 3: Konjunktive Form (KNF) ==================== -->
+  <rect x="665" y="55" width="295" height="425" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="812" y="82" text-anchor="middle" font-size="16" font-weight="bold" fill="#0369a1">Konjunktive Form (KNF)</text>
+
+  <!-- Circuit 3 diagram -->
+  <g transform="translate(685, 105)">
+    <!-- 3 parallel OR gates -->
+    <!-- OR 1 -->
+    <line x1="10" y1="35" x2="50" y2="35" class="wire"/>
+    <line x1="10" y1="47" x2="50" y2="47" class="wire"/>
+    <rect x="50" y="25" width="34" height="35" rx="3" class="gate"/>
+    <text x="67" y="42" class="gate-text">≥1</text>
+
+    <!-- OR 2 -->
+    <line x1="10" y1="90" x2="50" y2="90" class="wire"/>
+    <line x1="10" y1="102" x2="50" y2="102" class="wire"/>
+    <rect x="50" y="80" width="34" height="35" rx="3" class="gate"/>
+    <text x="67" y="97" class="gate-text">≥1</text>
+
+    <!-- OR 3 -->
+    <line x1="10" y1="145" x2="50" y2="145" class="wire"/>
+    <line x1="10" y1="157" x2="50" y2="157" class="wire"/>
+    <rect x="50" y="135" width="34" height="35" rx="3" class="gate"/>
+    <text x="67" y="152" class="gate-text">≥1</text>
+
+    <!-- Wires to 3-input AND gate -->
+    <line x1="84" y1="42" x2="160" y2="42" class="wire"/>
+    <line x1="160" y1="42" x2="160" y2="82" class="wire"/>
+    <line x1="160" y1="82" x2="175" y2="82" class="wire"/>
+
+    <line x1="84" y1="97" x2="175" y2="97" class="wire"/>
+
+    <line x1="84" y1="152" x2="160" y2="152" class="wire"/>
+    <line x1="160" y1="152" x2="160" y2="112" class="wire"/>
+    <line x1="160" y1="112" x2="175" y2="112" class="wire"/>
+
+    <!-- 3-input AND gate -->
+    <rect x="175" y="72" width="36" height="55" rx="3" class="gate"/>
+    <text x="193" y="100" class="gate-text">&amp;</text>
+
+    <!-- Output y -->
+    <line x1="211" y1="100" x2="240" y2="100" class="wire"/>
+    <text x="245" y="104" font-size="13" font-weight="bold" fill="#0f172a">y</text>
+  </g>
+
+  <!-- Metrics box 3 -->
+  <rect x="680" y="325" width="265" height="135" rx="6" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="695" y="352" font-size="13" font-weight="bold" fill="#0f172a">Schaltungskennzahlen:</text>
+  <text x="695" y="378" font-size="12" fill="#334155">• Gatteranzahl: <tspan font-weight="bold" fill="#16a34a">C<tspan baseline-shift="sub" font-size="9">A</tspan> = 4</tspan></text>
+  <text x="695" y="402" font-size="12" fill="#334155">• Schaltungstiefe: <tspan font-weight="bold" fill="#16a34a">C<tspan baseline-shift="sub" font-size="9">S</tspan> = 2</tspan></text>
+  <text x="695" y="426" font-size="12" fill="#334155">• Gattereingänge: <tspan font-weight="bold" fill="#16a34a">9 Pins (3×2+3)</tspan></text>
+  <text x="695" y="448" font-size="11" fill="#16a34a; font-weight:600">Optimaler Kompromiss (Tiefe 2 &amp; 9 Pins)</text>
+</svg>
