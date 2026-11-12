@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<fsm>
+  <states>
+    <state>
+      <values>a0=0,a1=0</values>
+      <position x="250.0" y="300.0"/>
+      <number>0</number>
+      <name>S0</name>
+      <radius>70</radius>
+      <isInitial>true</isInitial>
+      <initialAngle>12</initialAngle>
+    </state>
+    <state>
+      <values>a0=0,a1=1</values>
+      <position x="550.0" y="300.0"/>
+      <number>1</number>
+      <name>S1</name>
+      <radius>70</radius>
+      <isInitial>false</isInitial>
+      <initialAngle>0</initialAngle>
+    </state>
+    <state>
+      <values>a0=1,a1=0</values>
+      <position x="850.0" y="300.0"/>
+      <number>2</number>
+      <name>S2</name>
+      <radius>70</radius>
+      <isInitial>false</isInitial>
+      <initialAngle>0</initialAngle>
+    </state>
+  </states>
+  <transitions>
+    <transition>
+      <values></values>
+      <position x="400.0" y="220.0"/>
+      <fromState reference="../../../states/state"/>
+      <toState reference="../../../states/state[2]"/>
+      <condition>e=1</condition>
+    </transition>
+    <transition>
+      <values></values>
+      <position x="400.0" y="380.0"/>
+      <fromState reference="../../../states/state[2]"/>
+      <toState reference="../../../states/state"/>
+      <condition>e=0</condition>
+    </transition>
+    <transition>
+      <values></values>
+      <position x="700.0" y="220.0"/>
+      <fromState reference="../../../states/state[2]"/>
+      <toState reference="../../../states/state[3]"/>
+      <condition>e=1</condition>
+    </transition>
+    <transition>
+      <values></values>
+      <position x="700.0" y="380.0"/>
+      <fromState reference="../../../states/state[3]"/>
+      <toState reference="../../../states/state[2]"/>
+      <condition>e=0</condition>
+    </transition>
+    <transition>
+      <values></values>
+      <position x="150.0" y="300.0"/>
+      <fromState reference="../../../states/state"/>
+      <toState reference="../../../states/state"/>
+      <condition>e=0</condition>
+    </transition>
+    <transition>
+      <values></values>
+      <position x="950.0" y="300.0"/>
+      <fromState reference="../../../states/state[3]"/>
+      <toState reference="../../../states/state[3]"/>
+      <condition>e=1</condition>
+    </transition>
+  </transitions>
+</fsm>
