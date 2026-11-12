@@ -1,6 +1,124 @@
 <?xml version="1.0" encoding="utf-8"?>
 <circuit>
   <version>1</version>
+  <attributes>
+    <entry>
+      <string>Description</string>
+      <string>Getaktetes D-Latch</string>
+    </entry>
+    <entry>
+      <string>shapeType</string>
+      <shapeType>CUSTOM</shapeType>
+    </entry>
+    <entry>
+      <string>Width</string>
+      <int>6</int>
+    </entry>
+    <entry>
+      <string>Height</string>
+      <int>7</int>
+    </entry>
+    <entry>
+      <string>customShape</string>
+      <shape>
+        <pins>
+          <entry>
+            <string>D</string>
+            <pin>
+              <pos x="0" y="40"/>
+              <showLabel>false</showLabel>
+            </pin>
+          </entry>
+          <entry>
+            <string>C</string>
+            <pin>
+              <pos x="0" y="100"/>
+              <showLabel>false</showLabel>
+            </pin>
+          </entry>
+          <entry>
+            <string>Q</string>
+            <pin>
+              <pos x="120" y="40"/>
+              <showLabel>false</showLabel>
+            </pin>
+          </entry>
+          <entry>
+            <string>~Q</string>
+            <pin>
+              <pos x="120" y="100"/>
+              <showLabel>false</showLabel>
+            </pin>
+          </entry>
+        </pins>
+        <drawables>
+          <poly>
+            <poly path="M 0,0 L 120,0 L 120,140 L 0,140 Z" evenOdd="false"/>
+            <thickness>4</thickness>
+            <filled>false</filled>
+            <color>
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+              <alpha>255</alpha>
+            </color>
+          </poly>
+          <text>
+            <p1 x="8" y="48"/>
+            <p2 x="9" y="48"/>
+            <text>1D</text>
+            <orientation>LEFTBOTTOM</orientation>
+            <size>24</size>
+            <color>
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+              <alpha>255</alpha>
+            </color>
+          </text>
+          <text>
+            <p1 x="8" y="108"/>
+            <p2 x="9" y="108"/>
+            <text>C1</text>
+            <orientation>LEFTBOTTOM</orientation>
+            <size>24</size>
+            <color>
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+              <alpha>255</alpha>
+            </color>
+          </text>
+          <text>
+            <p1 x="112" y="48"/>
+            <p2 x="113" y="48"/>
+            <text>Q</text>
+            <orientation>RIGHTBOTTOM</orientation>
+            <size>24</size>
+            <color>
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+              <alpha>255</alpha>
+            </color>
+          </text>
+          <text>
+            <p1 x="112" y="108"/>
+            <p2 x="113" y="108"/>
+            <text>~Q</text>
+            <orientation>RIGHTBOTTOM</orientation>
+            <size>24</size>
+            <color>
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+              <alpha>255</alpha>
+            </color>
+          </text>
+        </drawables>
+      </shape>
+    </entry>
+  </attributes>
   <visualElements>
     <visualElement>
       <elementName>NOr</elementName>
